@@ -1,5 +1,5 @@
+#create a method called turn_count
 #takes in an argument of the board array
-#returns the number of turns that have been played
 #returns the number of turns that have been played
 #use each iterator to loop over the elements of the board array
 #create a counter to keep track of the amount of turns that have been played
@@ -8,16 +8,15 @@
 
 
 board = [" "," "," "," "," "," "," "," "," "]
+
 turns = 0
-
 def turn_count(board)
-  board.each do |turn|
+  board.each do |ele|
 
-    if turn == "X" || turn == "O"
+    if ele == "X" || ele == "O"
     turns += 1
     end
 
   end
   return turns
 end
-  
