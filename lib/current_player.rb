@@ -9,8 +9,9 @@
 
 board = [" "," "," "," "," "," "," "," "," "]
 
-turns = 0
+
 def turn_count(board)
+  turns = 0
   board.each do |ele|
 
     if ele == "X" || ele == "O"
