@@ -12,12 +12,25 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 def turn_count(board)
   turns = 0
-  board.each do |ele|
 
+  board.each do |ele|
     if ele == "X" || ele == "O"
     turns += 1
     end
-
   end
+
   return turns
+end
+
+#create a method called current_player
+#takes in an argument of a board
+#if turn_count is even the playeer is X if odd player is O
+#use the modulo method to determine if even or odd
+
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    return "X"
+  else
+    return "O"
+  end 
 end
